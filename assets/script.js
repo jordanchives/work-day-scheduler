@@ -24,7 +24,6 @@ $(function () {
   // current hour in 24-hour time?
   //
   $('textarea').each(function(i) {
-    const value = localStorage.getItem($(this).parent().attr('id'));
     $(this).val(localStorage.getItem($(this).parent().attr('id')));
   })
   // TODO: Add code to get any user input that was saved in localStorage and set
