@@ -13,9 +13,14 @@ $(function () {
   $('.saveBtn').on('click', function () {
     console.log($(this));
     const task = $(this).siblings('textarea').val();
-    const  time = $(this).parent().attr('id');
+    const time = $(this).parent().attr('id');
     localStorage.setItem(time, task);
+
+    $('#announce').css('opacity', '1');
+    $('#announce').fadeTo(500, 0);
   })
+  
+  $('#announce').css('opacity', '0');
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -23,9 +28,17 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   //
-  $('textarea').each(function(i) {
+  for (let i = 9; i < 17; i++) {
+    const currentTime  = day().hour();
+    const hour = 
+    if(i < currentTime) {
+      $('#hour-' + i.toString()).addClass('past');
+    }
+  }
+  $('textarea').each(function (i) {
     $(this).val(localStorage.getItem($(this).parent().attr('id')));
   })
+
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
