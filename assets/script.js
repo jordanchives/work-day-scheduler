@@ -30,13 +30,12 @@ $(function () {
   //
   for (let i = 9; i <= 17; i++) {
     const currentTime  = dayjs().hour();
-    // const hour = 
     if(i < currentTime) {
       $('#hour-' + i.toString()).addClass('past');
     } else if(i > currentTime) {
       $('#hour-' + i.toString()).addClass('future');
     } else {
-        $('#hour-' + i.toString()).addClass('present');
+        $('#hour-' + i.toString() + ' .description').addClass('present');
     }
   }
   $('textarea').each(function (i) {
