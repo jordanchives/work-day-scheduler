@@ -5,6 +5,10 @@ body {
   color: #727272;
 }
 
+header {
+  border-bottom: 2px solid #727272;
+}
+
 textarea {
   background: transparent;
   border: none;
