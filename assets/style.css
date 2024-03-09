@@ -1,20 +1,31 @@
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --base-font-size: 16px;
+  --background-color: #212121;
+  --text-color: #727272;
+  --border-color: #727272;
+  --accent-color: #FF9800;
+  --hover-color: #212121;
+  --save-btn-hover-color: #FF9800;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  background-color: #212121;
-  color: #727272;
+  font-family: var(--main-font);
+  font-size: var(--base-font-size);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header {
-  border-bottom: 2px solid #727272;
+  border-bottom: 2px solid var(--border-color);
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #727272;
-  border-left: 1px solid #212121;
+  color: var(--text-color);
+  border-left: 1px solid var(--background-color);
   padding: 10px;
 }
 
@@ -27,12 +38,12 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid #212121;
+  border-top: 1px solid var(--background-color);
 }
 
 .hour {
-  background-color: #212121;
-  border-top: 1px dashed #727272;
+  background-color: var(--background-color);
+  border-top: 1px dashed var(--border-color);
 }
 
 .past {
@@ -48,15 +59,15 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid #727272;
+  border-left: 1px solid var(--border-color);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #FF9800;
-  color: #727272;
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 .saveBtn:hover {
-  color:#212121;
+  color: var(--hover-color);
 }
 
 .saveBtn i:hover {
