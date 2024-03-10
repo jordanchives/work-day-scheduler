@@ -41,3 +41,9 @@ The live site can be accessed [here](https://jordanchives.github.io/work-day-sch
 
 ## Preview
 ![Demo](./assets/scheduler-demo.gif)
+
+---
+
+Application is developed by Jordan.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
